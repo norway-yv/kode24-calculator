@@ -11,3 +11,21 @@ businessType = data["Er du ansatt i det offentlige eller private næringsliv?"]
 yearsEducation = data["Hvor mange års relevant, formell utdannelse har du?"]
 workExperience = data["Hvor mange års relevant arbeidserfaring har du?"]
 wage = data["Hva er din grunnlønn? (årslønn før skatt, uten eventuelle bonuser eller overtidsbetaling)"]
+
+age , county, workSituation, businessType, yearsEducation, workExperience = age.tolist(), county.tolist(), workSituation.tolist(), businessType.tolist(), yearsEducation.tolist(), workExperience.tolist()
+age2, county2, workSituation2, businessType2, yearsEducation2, workExperience2 = age, county, workSituation, businessType, yearsEducation, workExperience
+
+for i in range(len(age)):
+    age2.remove(age[i])
+    age2.append(age[i][:-2])
+    county2.remove(county[i])
+    county2.append(county[i])
+    workSituation2.remove(workSituation[i])
+    workSituation2.append(workSituation[i])
+    businessType2.remove(businessType[i])
+    businessType2.append(businessType[i])
+    yearsEducation2.remove(yearsEducation[i])
+    yearsEducation2.append(yearsEducation[i])
+    workExperience2.remove(workExperience[i])
+    workExperience2.append(workExperience[i])
+print(age2)
