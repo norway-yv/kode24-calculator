@@ -12,7 +12,7 @@ yearsEducation = data["Hvor mange års relevant, formell utdannelse har du?"]
 workExperience = data["Hvor mange års relevant arbeidserfaring har du?"]
 wage = data["Hva er din grunnlønn? (årslønn før skatt, uten eventuelle bonuser eller overtidsbetaling)"]
 #Make data into list
-age , county, workSituation, businessType, yearsEducation, workExperience = age.tolist(), county.tolist(), workSituation.tolist(), businessType.tolist(), yearsEducation.tolist(), workExperience.tolist()
+age , county, workSituation, businessType, yearsEducation, workExperience, wage = age.tolist(), county.tolist(), workSituation.tolist(), businessType.tolist(), yearsEducation.tolist(), workExperience.tolist(), wage.tolist()
 
 #Create dictionaries for search
     #Age categories with lists of ages
@@ -30,7 +30,7 @@ respondents = {}
 for i in range(len(age)):
     toAdd = {i:{}}
     respondents.update(toAdd)
-    toAdd = {"Age":age[i], "County":county[i], "Work Situation":workSituation[i], "Business Type":businessType[i], "Years Education":yearsEducation[i], "Work Experience":workExperience[i]}
+    toAdd = {"Age":age[i], "County":county[i], "Work Situation":workSituation[i], "Business Type":businessType[i], "Years Education":yearsEducation[i], "Work Experience":workExperience[i], "Wage":wage[i]}
     respondents[i].update(toAdd)
 #Create list of options
 def listOfOptions(parameter):
@@ -45,3 +45,4 @@ workSituations = listOfOptions(workSituation)
 businessTypes = listOfOptions(businessType)
 yearsEducations = listOfOptions(yearsEducation)
 workExperiences = listOfOptions(workExperience)
+
