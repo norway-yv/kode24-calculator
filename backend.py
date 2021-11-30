@@ -32,4 +32,16 @@ for i in range(len(age)):
     respondents.update(toAdd)
     toAdd = {"Age":age[i], "County":county[i], "Work Situation":workSituation[i], "Business Type":businessType[i], "Years Education":yearsEducation[i], "Work Experience":workExperience[i]}
     respondents[i].update(toAdd)
-print(respondents)
+#Create list of options
+def listOfOptions(parameter):
+    parameters = []
+    for occurence in parameter:
+        if occurence not in parameters and occurence != "ikke oppgitt" and occurence != "vet ikke":
+                parameters.append(occurence)
+    return parameters
+    
+counties = listOfOptions(county)
+workSituations = listOfOptions(workSituation)
+businessTypes = listOfOptions(businessType)
+yearsEducations = listOfOptions(yearsEducation)
+workExperiences = listOfOptions(workExperience)
