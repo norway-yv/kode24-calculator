@@ -28,7 +28,8 @@ ageCategories = {
     #Create individual data strings for respondents
 respondents = {}
 for i in range(len(age)):
-    toAdd = {0:{}}
+    toAdd = {i:{}}
     respondents.update(toAdd)
     toAdd = {"Age":age[i], "County":county[i], "Work Situation":workSituation[i], "Business Type":businessType[i], "Years Education":yearsEducation[i], "Work Experience":workExperience[i]}
     respondents[i].update(toAdd)
+print(respondents)
