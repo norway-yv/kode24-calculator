@@ -15,7 +15,8 @@ wage = data["Hva er din grunnlønn? (årslønn før skatt, uten eventuelle bonus
 age , county, workSituation, businessType, yearsEducation, workExperience = age.tolist(), county.tolist(), workSituation.tolist(), businessType.tolist(), yearsEducation.tolist(), workExperience.tolist()
 age2, county2, workSituation2, businessType2, yearsEducation2, workExperience2 = age, county, workSituation, businessType, yearsEducation, workExperience
 
-for i in range(len(age)):
+"""
+for i in range(len(age)-1):
     age2.remove(age[i])
     age2.append(age[i][:-2])
     county2.remove(county[i])
@@ -29,3 +30,7 @@ for i in range(len(age)):
     workExperience2.remove(workExperience[i])
     workExperience2.append(workExperience[i])
 print(age2)
+"""
+ageCategories = {
+    "20-24": 
+}
