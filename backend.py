@@ -32,5 +32,10 @@ for i in range(len(age)-1):
 print(age2)
 """
 ageCategories = {
-    "20-24": 
+    "20-24": range(20, 24).tolist()
+    "25-29": range(25, 29).tolist()
+    "30-34": range(30, 34).tolist()
+    "35-39": range(35, 39).tolist()
+    "40-44": range(40, 44).tolist()
+    "45-50": range(45, 50).tolist()
 }
