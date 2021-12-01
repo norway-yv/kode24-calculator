@@ -1,6 +1,8 @@
 Name    Value
+age 27
 county_input    Oslo
 workSituation_input konsulent
 businessType_input  privat
 yearsEducation_input    3
 workExperience_input    10
+title_input junior
