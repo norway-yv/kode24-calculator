@@ -57,3 +57,12 @@ yearsEducation_input = inputs[4]
 workExperience_input = inputs[5]
 title_input = inputs[6]
 
+print(f'''
+{age_input}
+{county_input}
+{workSituation_input}
+{businessType_input}
+{yearsEducation_input}
+{workExperience_input}
+{title_input}
+''')
