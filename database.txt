@@ -1,6 +1,7 @@
-Name	Valuecounty_input	Oslo
-workSituation_input	in-house
-businessType_input	offentlig
-yearsEducation_input	0
-workExperience_input	0
-title_input	junior
+Name	Value
+county_input	test
+workSituation_input	test
+businessType_input	test
+yearsEducation_input	test
+workExperience_input	test
+title_input	test

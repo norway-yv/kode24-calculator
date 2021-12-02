@@ -3,8 +3,8 @@ age_input = int(round(float(input("Age: ")), 0))
 county_input = input("County: ")
 workSituation_input = input("Work situation: ")
 businessType_input = input("Business type: ")
-yearsEducation_input = input("Years education: ")
-workExperience_input = input("Work experience: ")
+yearsEducation_input = int(round(float(input("Years education: ")), 0))
+workExperience_input = int(round(float(input("Work experience: ")), 0))
 title_input = input("Title: ")
 
 #Delete content of database.txt
